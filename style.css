@@ -38,3 +38,19 @@ body{
     left: 44vw;
 }
 
+.gameOver{
+    position: relative;
+    top: 63px;
+    font-size: 53px;
+    text-align: center;
+    font-weight: 600;
+}
+
+#scoreCont{
+    position: absolute;
+    top: 63px;
+    left: 23px;
+    padding: 10px;
+    border: 2px solid black;
+    display: inline-block;
+}
