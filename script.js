@@ -69,3 +69,8 @@ setInterval(() => {
     }
     
 }, 10)
+
+function updateScore(score) {
+    scoreCont = document.getElementById("scoreCont")
+    scoreCont.innerHTML = "Your score is " + score;
+}
