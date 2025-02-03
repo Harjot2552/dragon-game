@@ -28,3 +28,20 @@ document.onkeydown = function (e) {
         dino.style.left = (dinoX - 112) + "px";
     }
 }
+
+setInterval(() => {
+    dino = document.querySelector(".dino")
+    gameOver = document.querySelector(".gameOver")
+    obstacle = document.querySelector(".obstacle")
+
+    dx = parseInt(window.getComputedStyle(dino, null).getPropertyValue('left'));
+    dy = parseInt(window.getComputedStyle(dino, null).getPropertyValue('top'));
+
+    ox = parseInt(window.getComputedStyle(obstacle, null).getPropertyValue('left'));
+    oy = parseInt(window.getComputedStyle(obstacle, null).getPropertyValue('top'));
+
+    offsetX = Math.abs(dx - ox)
+    offsetY = Math.abs(dy - oy)
+
+    
+}, 10)
