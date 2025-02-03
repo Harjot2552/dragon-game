@@ -43,5 +43,29 @@ setInterval(() => {
     offsetX = Math.abs(dx - ox)
     offsetY = Math.abs(dy - oy)
 
+
+    if (offsetX < 73 && offsetY < 52) {
+        gameOver.innerHTML = 'Game Over - Reload to Start Again';
+        obstacle.classList.remove('obstacleAni')
+        bgmusic.pause();
+        audiogo.play();
+        setTimeout(() => {
+            audiogo.pause();
+        }, 1000);
+    }
+    else if (offsetX < 145 && cross) {
+        score += 1;
+        updateScore(score);
+        cross = false;
+        setTimeout(() => {
+            cross = true;
+        }, 1000)
+        setTimeout(() => {
+            aniDur = parseFloat(window.getComputedStyle(obstacle, null).getPropertyValue('animation-duration'));
+            newDur = aniDur - 0.1
+            obstacle.style.animationDuration = newDur + 's';
+        }, 500);
+
+    }
     
 }, 10)
