@@ -1,6 +1,6 @@
 # iDragon - 🐉 JavaScript Game
 
-Welcome to **iDragon** 🎮! This fun and engaging game challenges players to dodge obstacles while controlling a cute dino character. Get ready to jump, move, and rack up your high score!
+Dodge obstacles while controlling a cute dino character. Jump, move, and survive as long as possible while the game gets harder over time. Built with HTML, CSS, and JavaScript, iDragon features smooth animations, background music, and dynamic difficul
 
 ## 📐 Table of Contents
 - [How to Play 🎮](#how-to-play-)
